@@ -30,21 +30,10 @@ img { max-width: 100%; display: block; }
   margin: 0 auto;
 }
 
-.draft-banner {
-  position: relative;
-  z-index: 20;
-  padding: 8px 16px;
-  text-align: center;
-  font-size: 12px;
-  letter-spacing: .08em;
-  text-transform: uppercase;
-  background: #f0b429;
-  color: #171717;
-}
 
 .site-header {
   position: absolute;
-  top: 34px;
+  top: 0;
   left: 0;
   right: 0;
   z-index: 10;
@@ -291,7 +280,7 @@ h3 {
 
 @media (max-width: 760px) {
   .site-header {
-    top: 34px;
+    top: 0;
     align-items: flex-start;
   }
 

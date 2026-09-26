@@ -1203,7 +1203,7 @@ h3 {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  min-height: 40px;
+  min-height: 44px;
   padding: 0 13px;
   border: 1px solid rgba(255,255,255,.22);
   border-radius: 999px;
@@ -1530,7 +1530,7 @@ h3 {
   }
 
   .mobile-menu summary {
-    min-height: 36px;
+    min-height: 44px;
     padding: 0 11px;
     font-size: 10px;
   }

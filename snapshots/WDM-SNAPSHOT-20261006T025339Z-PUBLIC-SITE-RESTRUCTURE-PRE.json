@@ -1,0 +1,82 @@
+{
+  "snapshot_id": "WDM-SNAPSHOT-20261006T025339Z-PUBLIC-SITE-RESTRUCTURE-PRE",
+  "snapshot_type": "PRE-TEMP",
+  "captured_at_utc": "2026-10-06T02:53:39Z",
+  "context": "Task 7 public website restructuring before temporary-role implementation",
+  "purpose": "Immutable architecture baseline only. This record contains no unreleased product names or secret values.",
+  "technical_source_of_truth": "GitHub",
+  "repository": {
+    "full_name": "zornnovum-svg/zorn-novum-website",
+    "repository_id": 1379004080,
+    "visibility": "public",
+    "owner_type": "User",
+    "current_owner": "zornnovum-svg",
+    "default_branch": "main",
+    "production_branch": {
+      "name": "main",
+      "commit_sha": "5888a02c27e37935f61b4b9c581737458a20b2d4",
+      "tree_sha": "74ced9bedae70cc40dba5d7854b2b23a8b828b00"
+    },
+    "development_branch": {
+      "name": "development",
+      "commit_sha": "5888a02c27e37935f61b4b9c581737458a20b2d4",
+      "relation_to_main": "identical"
+    },
+    "root_state": {
+      ".nojekyll": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "CNAME": "4c16c577559f1aea707d2d1cfbc026083b461ccc",
+      "README.md": "eca1d14372a9f24827863552f6ae584bdf33f721",
+      "assets/": "af68d0e285ce22074aaa2d79079c381a8ff6014c",
+      "index.html": "5c1f9bc5c660544892dcf7cd0fd021e6d58722a1",
+      "styles.css": "d1e686b26c327235b9c9f34284a90c00f6f92765"
+    }
+  },
+  "deployment": {
+    "platform": "GitHub Pages",
+    "observable_workflow": "dynamic/pages/pages-build-deployment",
+    "latest_verified_run_id": 36282698461,
+    "run_number": 6,
+    "head_branch": "main",
+    "head_sha": "5888a02c27e37935f61b4b9c581737458a20b2d4",
+    "run_status": "completed",
+    "run_conclusion": "success",
+    "jobs": {
+      "build": "success",
+      "deploy": "success",
+      "report_build_status": "success"
+    },
+    "custom_domain_from_repository_cname": "zornnovum.com",
+    "repository_custom_workflows_observed_at_root": false,
+    "notes": [
+      "Repository root contained no .github directory at capture time.",
+      "Pages settings API was not available through the connected GitHub fetch surface; current source is evidenced by the successful dynamic Pages run from main.",
+      "External DNS/HTTPS readback could not be independently resolved from this runtime at capture time; no DNS change was attempted."
+    ]
+  },
+  "snapshot_storage": {
+    "branch": "wdm-snapshots",
+    "deployment_evidence_before_manifest_write": "No GitHub Actions runs existed for branch wdm-snapshots before the manifest write.",
+    "production_deployed_branch_path": false,
+    "manifest_path": "snapshots/WDM-SNAPSHOT-20261006T025339Z-PUBLIC-SITE-RESTRUCTURE-PRE.json",
+    "immutable_reference": "To be filled by the Git commit SHA created by this manifest write and recorded in the Drive registry."
+  },
+  "railway": {
+    "applicable": false,
+    "reason": "No Railway-managed website infrastructure is currently observable or registered as part of this WDM public-site deployment."
+  },
+  "persistent_data": {
+    "applicable": false,
+    "database": false,
+    "schema_or_migrations": false,
+    "volumes": false,
+    "backup_or_recovery_point": "not applicable for the current static GitHub Pages website architecture"
+  },
+  "secrets": {
+    "values_recorded": false,
+    "policy": "No passwords, API keys, tokens, private keys, raw connection strings, or other secret values are permitted in this snapshot."
+  },
+  "confidentiality": {
+    "unreleased_product_names_recorded": false,
+    "public_name_scope": "Corporate public naming only; this architecture record intentionally excludes unreleased proprietary naming."
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "snapshot_id": "WDM-SNAPSHOT-20261006T145154Z-PUBLIC-SITE-RESTRUCTURE-POST",
+  "snapshot_type": "POST-TEMP",
+  "timestamp_basis_utc": "2026-10-06T14:51:54Z",
+  "timestamp_basis": "TEMP CLOSEOUT receipt timestamp; capture was created after independent WDM verification.",
+  "context": "Task 7 public website corporate restructuring after TEMP CLOSEOUT",
+  "relationship": {
+    "pre_snapshot_id": "WDM-SNAPSHOT-20261006T025339Z-PUBLIC-SITE-RESTRUCTURE-PRE",
+    "pre_manifest_commit": "1f354b0822ec5d797e5b31e0c13caee14c62c8c6"
+  },
+  "technical_source_of_truth": "GitHub",
+  "repository": {
+    "full_name": "zornnovum-svg/zorn-novum-website",
+    "repository_id": 1379004080,
+    "visibility": "public",
+    "current_owner": "zornnovum-svg",
+    "default_branch": "main",
+    "production_branch": {
+      "name": "main",
+      "commit_sha": "5888a02c27e37935f61b4b9c581737458a20b2d4",
+      "changed_by_temp": false
+    },
+    "development_branch": {
+      "name": "development",
+      "commit_sha": "f245306edf87b9ef86348af482a344a7a53c88f5",
+      "relation_to_main": "ahead by 2 commits; behind by 0",
+      "commits": [
+        {
+          "sha": "90aba1c6c40469d8e0ecae01c75866dcce32f796",
+          "message": "Restructure public site as corporate fintech portfolio",
+          "parent": "5888a02c27e37935f61b4b9c581737458a20b2d4"
+        },
+        {
+          "sha": "f245306edf87b9ef86348af482a344a7a53c88f5",
+          "message": "Restore public-safe corporate imagery",
+          "parent": "90aba1c6c40469d8e0ecae01c75866dcce32f796"
+        }
+      ]
+    },
+    "redesigned_public_files": [
+      "index.html",
+      "products.html",
+      "products/market-intelligence.html",
+      "products/market-platform.html",
+      "products/integration-infrastructure.html",
+      "about.html",
+      "contact.html",
+      "404.html",
+      "robots.txt",
+      "sitemap.xml",
+      "styles.css"
+    ],
+    "custom_domain_file": {
+      "path": "CNAME",
+      "value": "zornnovum.com",
+      "unchanged_from_main": true
+    }
+  },
+  "independent_verification": {
+    "known_restricted_name_terms_checked": [
+      "Z-Novum",
+      "Z Novum",
+      "Custom Market Scan",
+      "Geminus",
+      "Pathway",
+      "TSM"
+    ],
+    "redesigned_public_file_hits": [],
+    "named_third_party_platform_hits_checked": [
+      "Kraken",
+      "Coinbase",
+      "Robinhood",
+      "Binance"
+    ],
+    "redesigned_public_file_third_party_hits": [],
+    "internal_link_check": "No broken internal page links found in the redesigned HTML set.",
+    "accessibility_source_checks": {
+      "skip_links": true,
+      "main_targets": true,
+      "single_h1_per_page": true,
+      "focus_visible_css": true,
+      "reduced_motion_css": true
+    },
+    "responsive_source_checks": {
+      "media_queries_present": 4,
+      "mobile_navigation_css_present": true
+    },
+    "metadata_checks": {
+      "titles": true,
+      "descriptions_on_indexable_pages": true,
+      "canonical_links_on_indexable_pages": true,
+      "open_graph_on_indexable_pages": true,
+      "twitter_card_on_indexable_pages": true,
+      "favicon_reference": true,
+      "sitemap_contains_all_expected_indexable_routes": true,
+      "robots_points_to_sitemap": true
+    },
+    "referenced_public_safe_assets": [
+      "assets/Zorn_Novum_Web_Favicon_512.png",
+      "assets/Zorn_Novum_Social_Share_1200x630.jpg",
+      "assets/Zorn_Novum_Web_Background_Pattern_1672x941.jpg"
+    ],
+    "production_branch_unchanged": true,
+    "development_branch_deployment_runs": 0
+  },
+  "deployment": {
+    "platform": "GitHub Pages",
+    "latest_verified_production_run_id": 36282698461,
+    "latest_verified_production_run_status": "completed",
+    "latest_verified_production_run_conclusion": "success",
+    "latest_verified_production_head_branch": "main",
+    "latest_verified_production_head_sha": "5888a02c27e37935f61b4b9c581737458a20b2d4",
+    "production_change_by_temp": false,
+    "production_release_authorized": false
+  },
+  "legacy_public_asset_limitation": {
+    "status": "OPEN RELEASE-BLOCKING CLEANUP",
+    "description": "The redesigned HTML/CSS no longer references the old product-branded imagery, but legacy assets from the prior site remain present in the public repository tree on development. Some filenames use legacy ZN/market-discovery naming and the prior main site referenced them in the old product-branded experience. Because GitHub Pages can serve unlinked repository files by path, the development branch should not be treated as fully proprietary-name-clean for production release until these legacy assets are reviewed and removed/replaced as appropriate.",
+    "observed_examples": [
+      "assets/ZN_Web_Control_Flow_Desktop_v1.0.png",
+      "assets/ZN_Web_Control_Flow_Mobile_v1.0.png",
+      "assets/images/market-discovery/ZN_MD_S10_Intelligence_vs_Execution_Architecture_POLISH_FINAL.png",
+      "assets/images/market-discovery/ZN_MD_S1_Hero_Market_Universe_Desktop_FINAL_REV_FINAL.png",
+      "assets/images/market-discovery/ZN_MD_S1_Two_Ways_Desktop_POLISH_FINAL_V2.png"
+    ],
+    "current_production_note": "main remains intentionally unchanged and therefore still contains the prior public site until a separate production-release decision is authorized."
+  },
+  "railway": {
+    "applicable": false,
+    "reason": "No Railway-managed website infrastructure is part of the verified current WDM public-site deployment."
+  },
+  "persistent_data": {
+    "applicable": false,
+    "database": false,
+    "schema_or_migrations": false,
+    "volumes": false,
+    "backup_or_recovery_point": "not applicable for this static GitHub Pages website architecture"
+  },
+  "secrets": {
+    "values_recorded": false
+  },
+  "completion_assessment": {
+    "temp_closeout_claimed": "COMPLETE",
+    "wdm_independent_assessment": "IMPLEMENTATION VERIFIED WITH OPEN RELEASE-BLOCKING CLEANUP",
+    "task_7_ready_to_move_to_completed": false,
+    "reason": "Legacy branded assets remain in the development repository tree and require review/removal before the branch can be treated as release-clean under the current confidentiality requirement."
+  }
+}

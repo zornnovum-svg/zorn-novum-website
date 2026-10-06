@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://zornnovum.com/sitemap.xml

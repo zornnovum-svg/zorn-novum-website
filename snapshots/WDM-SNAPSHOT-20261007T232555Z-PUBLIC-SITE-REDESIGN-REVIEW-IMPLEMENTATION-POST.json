@@ -1,0 +1,47 @@
+{
+  "snapshot_id": "WDM-SNAPSHOT-20261007T232555Z-PUBLIC-SITE-REDESIGN-REVIEW-IMPLEMENTATION-POST",
+  "snapshot_type": "POST-TEMP",
+  "timestamp_basis_utc": "2026-10-07T23:25:55Z",
+  "timestamp_basis": "TEMP CLOSEOUT receipt timestamp; capture created after independent WDM verification.",
+  "context": "Task 7 public website redesign review, refinement, and production release after temporary-role closeout.",
+  "relationship": {
+    "pre_snapshot_id": "WDM-SNAPSHOT-20261007T160133Z-PUBLIC-SITE-REDESIGN-REVIEW-IMPLEMENTATION-PRE",
+    "pre_manifest_commit": "105b2723c3a3caf18b831f3c0f07dc6b4f77b1a2"
+  },
+  "repository": {
+    "full_name": "zornnovum-svg/zorn-novum-website",
+    "visibility": "public",
+    "main_sha": "38d503e56f044d6e6e4fed04dbd8dba60a9734c4",
+    "development_sha": "38d503e56f044d6e6e4fed04dbd8dba60a9734c4",
+    "branch_relation": "identical",
+    "cname": "zornnovum.com"
+  },
+  "deployment": {
+    "platform": "GitHub Pages",
+    "run_id": 37697081305,
+    "run_status": "completed",
+    "run_conclusion": "success",
+    "head_branch": "main",
+    "head_sha": "38d503e56f044d6e6e4fed04dbd8dba60a9734c4",
+    "development_run_count": 0
+  },
+  "verified_source": {
+    "homepage_headline_present": true,
+    "broken_internal_file_links": 0,
+    "fragment_target_failures": 0,
+    "missing_referenced_local_assets": 0,
+    "single_h1_each_public_html_page": true,
+    "required_metadata_present": true,
+    "responsive_media_query_count": 4,
+    "reduced_motion_css_present": true,
+    "focus_visible_css_present": true,
+    "restricted_name_hits_in_active_text_sources": 0,
+    "robots_points_to_sitemap": true
+  },
+  "public_render_check": "not current through available external retrieval; retrieved copy was stale",
+  "legacy_asset_cleanup": "not performed; separate WDM Task 8",
+  "persistent_data": "not applicable",
+  "railway": "not applicable",
+  "secrets_recorded": false,
+  "verification_status": "VERIFIED WITH EXTERNAL RENDER LIMITATION"
+}

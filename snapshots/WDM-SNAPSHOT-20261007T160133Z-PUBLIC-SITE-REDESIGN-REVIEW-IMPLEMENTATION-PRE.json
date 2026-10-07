@@ -1,0 +1,27 @@
+{
+  "snapshot_id": "WDM-SNAPSHOT-20261007T160133Z-PUBLIC-SITE-REDESIGN-REVIEW-IMPLEMENTATION-PRE",
+  "snapshot_type": "PRE-TEMP",
+  "timestamp_basis_utc": "2026-10-07T16:01:33Z",
+  "context": "Task 7 public website redesign review and development-branch implementation before temporary-role work.",
+  "repository": {
+    "full_name": "zornnovum-svg/zorn-novum-website",
+    "visibility": "public",
+    "production_branch": {"name": "main", "commit_sha": "5888a02c27e37935f61b4b9c581737458a20b2d4"},
+    "development_branch": {"name": "development", "commit_sha": "f245306edf87b9ef86348af482a344a7a53c88f5", "relation_to_main": "ahead by 2 commits; behind by 0"},
+    "cname": "zornnovum.com"
+  },
+  "deployment": {
+    "platform": "GitHub Pages",
+    "latest_verified_production_run_id": 36282698461,
+    "status": "completed",
+    "conclusion": "success",
+    "head_branch": "main",
+    "head_sha": "5888a02c27e37935f61b4b9c581737458a20b2d4",
+    "development_branch_run_count": 0,
+    "snapshot_branch_run_count_before_capture": 0
+  },
+  "persistent_data": "not applicable to this static website architecture",
+  "railway": "not applicable",
+  "production_release_authorized_for_temp": false,
+  "known_limitations": "Pages settings endpoint unavailable through current connector path; production source evidenced by successful Pages run from main."
+}

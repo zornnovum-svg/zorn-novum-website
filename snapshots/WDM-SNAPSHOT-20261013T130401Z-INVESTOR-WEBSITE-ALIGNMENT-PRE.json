@@ -1,0 +1,55 @@
+{
+  "snapshot_id": "WDM-SNAPSHOT-20261013T130401Z-INVESTOR-WEBSITE-ALIGNMENT-PRE",
+  "snapshot_type": "PRE-TEMP",
+  "captured_at_utc": "2026-10-13T13:04:01.589Z",
+  "context": "WDM temporary assignment: align existing public website's factual company/product/development narrative with finalized approved investor materials while preserving current layout; no production publication authorized.",
+  "parent_role": "Web Development Manager",
+  "assignment_task_refs": [
+    "2.7",
+    "2.8",
+    "2.9"
+  ],
+  "repository": {
+    "id": 1379004080,
+    "full_name": "zornnovum-svg/zorn-novum-website",
+    "visibility": "public",
+    "default_branch": "main",
+    "main_sha": "38d503e56f044d6e6e4fed04dbd8dba60a9734c4",
+    "development_sha": "38d503e56f044d6e6e4fed04dbd8dba60a9734c4",
+    "branch_relation": "identical",
+    "main_tree_sha": "38d503e56f044d6e6e4fed04dbd8dba60a9734c4",
+    "snapshot_storage_branch": "wdm-snapshots",
+    "snapshot_storage_prior_commit": "3aeba6885e66b6f624b3d03a2a30ff7bb94fc2d4",
+    "cname_file": "zornnovum.com",
+    "cname_blob_sha": "4c16c577559f1aea707d2d1cfbc026083b461ccc"
+  },
+  "deployment": {
+    "platform": "GitHub Pages",
+    "latest_observed_run_id": 37697081305,
+    "latest_observed_run_status": "completed",
+    "latest_observed_run_conclusion": "success",
+    "latest_observed_run_head_branch": "main",
+    "latest_observed_run_head_sha": "38d503e56f044d6e6e4fed04dbd8dba60a9734c4",
+    "observed_workflow_runs_total": 7,
+    "observed_wdm_snapshot_branch_pages_runs": 0,
+    "custom_domain_config_source": "repository CNAME: zornnovum.com",
+    "pages_settings_api": "not available via permitted GitHub connector",
+    "external_dns_https": "not independently verified in this snapshot"
+  },
+  "infrastructure": {
+    "hosting": "GitHub Pages static website",
+    "other_website_infrastructure": "not evidenced by current role-owned notes and authorized repository observations",
+    "database_schema_recovery": "not applicable to observed static website architecture; temp is not authorized to add or modify persistent data systems",
+    "railway": "not part of current authorized WDM website architecture from available evidence"
+  },
+  "capture_verification": {
+    "live_repo_metadata_checked": true,
+    "branch_shas_read_from_github": true,
+    "main_development_comparison": "identical",
+    "github_pages_workflow_runs_checked": true,
+    "nondeploying_snapshot_branch_basis": "GitHub Pages latest and listed workflow runs all show main deployment, not wdm-snapshots; wdm-snapshots historically held manifest commits without deploying",
+    "external_browser_render": "not independently verified",
+    "secrets_recorded": false
+  },
+  "decision_gate": "Temporary role may revise working/development materials after Keith's subsequent instruction; no production changes, domain/DNS, purchases, public claim approval or cross-role source access without separate exact authorization."
+}

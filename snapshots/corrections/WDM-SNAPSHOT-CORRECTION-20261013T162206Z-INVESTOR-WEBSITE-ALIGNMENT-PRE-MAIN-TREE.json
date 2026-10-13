@@ -1,0 +1,34 @@
+{
+  "correction_id": "WDM-SNAPSHOT-CORRECTION-20261013T162206Z-INVESTOR-WEBSITE-ALIGNMENT-PRE-MAIN-TREE",
+  "record_type": "APPEND-ONLY-SNAPSHOT-CORRECTION",
+  "created_at_utc": "2026-10-13T16:22:06.366Z",
+  "origin_role": "Web Development Manager",
+  "correction_scope": "Correct one metadata field in the existing PRE-TEMP architectural baseline; this is NOT a new PRE, POST, or FULL snapshot and NOT a recapture of the baseline.",
+  "original_snapshot": {
+    "id": "WDM-SNAPSHOT-20261013T130401Z-INVESTOR-WEBSITE-ALIGNMENT-PRE",
+    "type": "PRE-TEMP",
+    "repository_full_name": "zornnovum-svg/zorn-novum-website",
+    "manifest_path": "snapshots/WDM-SNAPSHOT-20261013T130401Z-INVESTOR-WEBSITE-ALIGNMENT-PRE.json",
+    "immutable_manifest_commit": "d02ba5163dec23c4a672a7892d26df4929d3f8c9"
+  },
+  "corrected_field": "repository.main_tree_sha",
+  "erroneous_original_value": "38d503e56f044d6e6e4fed04dbd8dba60a9734c4",
+  "verified_correct_value": "7694219e4cd03ca66234cad611a46ca70a287bf0",
+  "affected_commit": {
+    "ref": "main at original PRE capture",
+    "commit_sha": "38d503e56f044d6e6e4fed04dbd8dba60a9734c4"
+  },
+  "evidence": {
+    "github_git_commit_api_url": "https://api.github.com/repos/zornnovum-svg/zorn-novum-website/git/commits/38d503e56f044d6e6e4fed04dbd8dba60a9734c4",
+    "git_commit_response_sha": "38d503e56f044d6e6e4fed04dbd8dba60a9734c4",
+    "git_commit_tree_sha": "7694219e4cd03ca66234cad611a46ca70a287bf0",
+    "github_git_tree_api_url": "https://api.github.com/repos/zornnovum-svg/zorn-novum-website/git/trees/7694219e4cd03ca66234cad611a46ca70a287bf0",
+    "git_tree_response_sha": "7694219e4cd03ca66234cad611a46ca70a287bf0",
+    "git_tree_type": "tree",
+    "original_manifest_read_at_immutable_commit": true
+  },
+  "required_interpretation": "The original manifest's repository.main_sha and repository.development_sha remain correct commit IDs. Its repository.main_tree_sha must be interpreted using the corrected tree value in this separate immutable record. The original manifest, immutable commit, and registry entry remain unchanged.",
+  "immutable_preservation": "Do not overwrite, rewrite, retarget, delete, or replace the original snapshot or any earlier registry/technical record.",
+  "other_snapshot_facts": "Unchanged and not re-certified by this field-specific correction.",
+  "allowed_operations": "Reference-only correction; no production website, source branch, DNS/domain, Pages deployment, customer data, or paid-service mutation."
+}

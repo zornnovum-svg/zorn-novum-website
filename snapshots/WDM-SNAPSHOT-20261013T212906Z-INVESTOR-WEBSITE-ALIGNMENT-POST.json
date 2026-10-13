@@ -1,0 +1,100 @@
+{
+  "snapshot_id": "WDM-SNAPSHOT-20261013T212906Z-INVESTOR-WEBSITE-ALIGNMENT-POST",
+  "snapshot_type": "POST-TEMP",
+  "captured_at_utc": "2026-10-13T21:29:06.525Z",
+  "context": "Parent WDM independent verification and partial task-level acceptance of Website Investor Alignment Specialist closeout following Keith-approved seven-page publication; remaining full QA is intentionally open.",
+  "parent_role": "Web Development Manager",
+  "assignment_task_refs": [
+    "2.7",
+    "2.8",
+    "2.9"
+  ],
+  "parent_acceptance": {
+    "overall": "ACCEPT VERIFIED APPROVED CONTENT AND PRODUCTION RELEASE; QA PARTIAL/INCOMPLETE",
+    "task_2_7": "verified complete",
+    "task_2_8": "verified complete",
+    "task_2_9": "open—mobile/cross-browser/full accessibility/performance and broader end-to-end checks not completed",
+    "master_task_2": "open; has other unresolved children"
+  },
+  "baseline": {
+    "pre_snapshot_id": "WDM-SNAPSHOT-20261013T130401Z-INVESTOR-WEBSITE-ALIGNMENT-PRE",
+    "pre_manifest_commit": "d02ba5163dec23c4a672a7892d26df4929d3f8c9",
+    "append_only_pre_correction_id": "WDM-SNAPSHOT-CORRECTION-20261013T162206Z-INVESTOR-WEBSITE-ALIGNMENT-PRE-MAIN-TREE",
+    "pre_correction_manifest_commit": "ed4924feff6ed76f4fccb06e3b2844b7f509a975",
+    "corrected_pre_tree_sha": "7694219e4cd03ca66234cad611a46ca70a287bf0",
+    "production_pre_commit_sha": "38d503e56f044d6e6e4fed04dbd8dba60a9734c4"
+  },
+  "repository": {
+    "id": 1379004080,
+    "full_name": "zornnovum-svg/zorn-novum-website",
+    "visibility": "public",
+    "default_branch": "main",
+    "main_sha": "09117266f85e927b46a24e78ef56292e4ede752c",
+    "main_tree_sha": "77a52c7f12887adea67d1205fe34efb1302ab740",
+    "development_sha": "c471dbcd97f05f6ef07c7d20c9e2fea65cf00d5d",
+    "development_tree_sha": "77a52c7f12887adea67d1205fe34efb1302ab740",
+    "content_relation": "identical Git trees, distinct commit SHAs",
+    "main_commit_parents": [
+      "38d503e56f044d6e6e4fed04dbd8dba60a9734c4",
+      "c471dbcd97f05f6ef07c7d20c9e2fea65cf00d5d"
+    ],
+    "release_pr": 1,
+    "release_pr_merged": true,
+    "release_html_paths": [
+      "index.html",
+      "products.html",
+      "about.html",
+      "contact.html",
+      "products/market-platform.html",
+      "products/market-intelligence.html",
+      "products/integration-infrastructure.html"
+    ],
+    "css_file_sha": "f59654723584672f6775733a5b850a732e2a21af",
+    "css_unchanged_from_pre": true,
+    "cname_file": "zornnovum.com",
+    "cname_blob_sha": "4c16c577559f1aea707d2d1cfbc026083b461ccc",
+    "cname_unchanged_from_pre": true,
+    "source_asset_changes_in_release": 0,
+    "snapshot_storage_branch": "wdm-snapshots",
+    "snapshot_storage_previous_commit": "ed4924feff6ed76f4fccb06e3b2844b7f509a975",
+    "snapshot_storage_is_not_observed_pages_deploy_source": true
+  },
+  "deployment": {
+    "platform": "GitHub Pages",
+    "production_source": "main, as reported in completed GitHub Pages run",
+    "latest_observed_run_id": 38469203499,
+    "latest_observed_run_status": "completed",
+    "latest_observed_run_conclusion": "success",
+    "latest_observed_run_branch": "main",
+    "latest_observed_run_sha": "09117266f85e927b46a24e78ef56292e4ede752c",
+    "observed_workflow_runs_total_before_manifest_write": 8,
+    "observed_snapshot_branch_pages_deploys": 0,
+    "observed_domain_from_repo_cname": "zornnovum.com",
+    "public_site_url": "https://zornnovum.com/",
+    "pages_settings_direct_api": "not independently confirmed via connector",
+    "dns_tls": "not independently verified",
+    "external_browser_render": "temp evidence reports limited desktop inspection of three sections; independent parent web crawler returned stale cached homepage and inaccessible subpages"
+  },
+  "infrastructure": {
+    "hosting": "static GitHub Pages",
+    "other_website_infrastructure": "not evidenced by authorized WDM working sources and current repository observations",
+    "railway": "not known to be part of WDM public website deployment",
+    "persistent_data_recovery": "not applicable to observed static site; no database/schema/volume mutation under this temp"
+  },
+  "acceptance_evidence": {
+    "audited_html_page_count": 7,
+    "checked_internal_file_and_anchor_references": 151,
+    "checked_local_anchors": 23,
+    "missing_local_references": 0,
+    "required_one_h1_and_metadata": "confirmed on 7 edited HTML pages",
+    "restricted_internal_names_in_active_edited_html": 0,
+    "approved_founder_prototype_and_intended_value_passages": "confirmed present in production source",
+    "css_assets_navigation_and_domain": "existing stylesheet/assets and CNAME unchanged by seven-page release",
+    "limits": "no fresh parent mobile, cross-browser, complete accessibility, performance, runtime product, TLS/DNS, or new desktop browser QA",
+    "existing_404_metadata_issue": "pre-existing and out of current edit scope"
+  },
+  "immutability": "POST snapshot is separate from the unchanged original PRE, its immutable correction, and the historical registry entries. Pin the production code and POST manifest at their immutable commits; do not alter production from snapshot capture.",
+  "security": "No credentials, investor-specific source IDs, private diligence, financing terms, account state, or proprietary implementation details included.",
+  "public_status": "Current published website remains subject to other outstanding WDM work; receipt/acceptance of this temp is not completion of master task 2.",
+  "verification_state_at_capture": "GITHUB SOURCE AND PAGES RELEASE VERIFIED; browser/device/performance/HTTPS/DNS LIMITATIONS EXPLICIT"
+}

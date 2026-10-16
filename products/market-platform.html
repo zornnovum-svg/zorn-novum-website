@@ -73,13 +73,13 @@
             <p>Start from a notification’s Trade button, which selects the relevant asset when available, or enter a trade manually. You choose the amount and order details.</p>
             <div class="flow" aria-label="Customer-controlled prototype order workflow">
               <article class="flow-step"><span>01</span><h3>Choose a market</h3><p>Browse available Kraken markets and request current prices through the server connection.</p></article>
-              <article class="flow-step"><span>02</span><h3>Prepare</h3><p>Choose a supported order type and amount. Order checks cover market minimums, precision, available funds, and fees.</p></article>
+              <article class="flow-step"><span>02</span><h3>Prepare</h3><p>Choose a supported order type and amount, with your account information available during preparation.</p></article>
               <article class="flow-step"><span>03</span><h3>Review</h3><p>Check the order details, calculated quantity, and estimated funding requirements before proceeding.</p></article>
               <article class="flow-step"><span>04</span><h3>Approve</h3><p>Explicitly authorize submission through the server connection. Recommendations and notifications never authorize a trade on their own.</p></article>
             </div>
-            <div class="notice"><strong>Account information and submission results.</strong>
-              <p>The account view shows available USD separately from nonzero asset holdings, followed by active orders. The last account snapshot remains visible between updates.</p>
-              <p>Submission results distinguish accepted, pending, rejected, and uncertain states. Persistent recovery records let the app check an interrupted submission and help prevent duplicate orders.</p>
+            <div class="notice"><strong>Your account, alongside your order.</strong>
+              <p>Review available USD, asset holdings, and active orders in the app.</p>
+              <p>Track submission results and check interrupted requests to help prevent duplicate orders.</p>
             </div>
           </section>
 
@@ -87,14 +87,15 @@
             <p class="eyebrow">Customer control</p>
             <h2>Final authorization stays with the customer.</h2>
             <p>The intended architecture separates market intelligence from platform-specific execution. That keeps the intelligence portable while allowing execution connections to be added or evaluated independently.</p>
-            <p>Exchange API credentials stay on the server. The phone client signs requests with a private key that remains on the device.</p>
+            <p>Exchange API credentials stay on the server while you review and approve orders in the app.</p>
           </section>
 
           <section class="detail-section" id="status">
             <p class="eyebrow">Development update / October 2026</p>
-            <h2>Customer-approved execution in a single-account prototype.</h2>
-            <p>The prototype supports market, limit, stop-loss, and take-profit orders through Kraken, subject to market rules and supported amount units. Supported entry orders can include one attached stop-loss or take-profit exit.</p>
-            <p>Expanded USD sizing has been implemented but awaits deployment and app integration. Other exchanges are planned.</p>
+            <h2>Execution bridge complete and operational.</h2>
+            <p>The execution bridge is complete and operational for explicitly customer-approved orders through the connected Kraken account. The broader product remains a single-account prototype under development.</p>
+            <p>Current capabilities include market, limit, stop-loss, and take-profit orders, subject to market rules and supported amount units. Supported entry orders can include one attached stop-loss or take-profit exit.</p>
+            <p>Additional exchanges are planned.</p>
             <p>Commercial release still requires further engineering, integration work, security, reliability, customer validation, and appropriate legal or regulatory review. Customer benefits and commercial readiness remain to be established.</p>
           </section>
 
@@ -103,7 +104,8 @@
             <h2>Availability and important considerations.</h2>
             <ul>
               <li>The current product is a single-account prototype under development.</li>
-              <li>Combined take-profit/stop-loss management and automatic cancellation of the remaining exit are not implemented.</li>
+              <li>Combined take-profit/stop-loss exits are not currently available.</li>
+              <li>Expanded USD sizing is not yet available in the app.</li>
               <li>No launch date, price, free-trial structure, or customer eligibility is promised on this page.</li>
               <li>No specific broker, exchange, market, asset class, or jurisdiction is promised as commercially supported.</li>
               <li>The legal and regulatory treatment of the exact product flow must be determined by qualified professionals before commercial launch.</li>

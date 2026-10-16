@@ -1,0 +1,72 @@
+{
+  "snapshot_id": "WDM-SNAPSHOT-20261016T003152Z-EXECUTION-BRIDGE-AI-WEBSITE-PRE",
+  "snapshot_type": "PRE-TEMP",
+  "captured_at_utc": "2026-10-16T00:31:52.410Z",
+  "context": "WDM creates temporary website specialist to propose accurate AI-assisted wording and a public-safe update about Keith-reported completion of the customer-app execution bridge. This snapshot covers the website baseline only; completed-bridge implementation/release claims remain separately subject to authoritative technical fact verification and Keith's approval.",
+  "parent_role": "Web Development Manager",
+  "assignment_task_refs": [
+    "2.11",
+    "2.11.1",
+    "2.11.2",
+    "2.11.3"
+  ],
+  "parent_task_list_id": "1U7GBXQ4TQtwbZ66YF423fsER7adOVr_epYUbw1Xcuxk",
+  "previous_snapshot": {
+    "snapshot_id": "WDM-SNAPSHOT-20261013T212906Z-INVESTOR-WEBSITE-ALIGNMENT-POST",
+    "immutable_manifest_commit": "570022b994bb8e6b1566ab07a4cc1f6778d4f442",
+    "note": "Earlier PRE snapshot and its append-only correction remain unchanged."
+  },
+  "repository": {
+    "id": 1379004080,
+    "full_name": "zornnovum-svg/zorn-novum-website",
+    "visibility": "public",
+    "default_branch": "main",
+    "main_commit_sha": "09117266f85e927b46a24e78ef56292e4ede752c",
+    "main_tree_sha": "77a52c7f12887adea67d1205fe34efb1302ab740",
+    "development_commit_sha": "c471dbcd97f05f6ef07c7d20c9e2fea65cf00d5d",
+    "development_tree_sha": "77a52c7f12887adea67d1205fe34efb1302ab740",
+    "branch_relation": "distinct commit IDs, identical Git trees",
+    "snapshot_storage_branch": "wdm-snapshots",
+    "snapshot_storage_before_commit": "570022b994bb8e6b1566ab07a4cc1f6778d4f442",
+    "non_production_storage_basis": "All eight currently listed GitHub Pages runs have main as head_branch, none came from wdm-snapshots; snapshot storage branch is distinct from main.",
+    "cname_file": "zornnovum.com",
+    "cname_blob_sha": "4c16c577559f1aea707d2d1cfbc026083b461ccc",
+    "styles_file_blob_sha": "f59654723584672f6775733a5b850a732e2a21af",
+    "site_source_architecture": "Static HTML/CSS with assets/, products/, sitemap.xml, robots.txt, CNAME; code tree pinned by immutable Git commit and Git tree SHAs."
+  },
+  "deployment": {
+    "hosting": "GitHub Pages",
+    "production_source": "main as observed from completed successful GitHub Pages deployment run",
+    "latest_observed_successful_run_id": 38469203499,
+    "latest_observed_successful_run_status": "completed",
+    "latest_observed_successful_run_conclusion": "success",
+    "latest_observed_successful_run_branch": "main",
+    "latest_observed_successful_run_sha": "09117266f85e927b46a24e78ef56292e4ede752c",
+    "observed_workflow_runs_total_before_snapshot": 8,
+    "custom_domain_from_repository_cname": "zornnovum.com",
+    "public_domain_url": "https://zornnovum.com/",
+    "pages_settings_api": "unavailable through current permitted GitHub connector endpoint; main deployment inferred from successful Pages run",
+    "dns_tls_certification": "not independently tested on this snapshot",
+    "browser_render": "not independently tested on this snapshot"
+  },
+  "infrastructure": {
+    "static_hosting": "GitHub Pages",
+    "other_wdm_owned_web_infrastructure": "not evidenced by verified WDM source and GitHub records",
+    "app_execution_bridge": "application-owned product development, not an authorized WDM website-system architecture component; not inspected or snapshotted",
+    "railway": "no Railway-managed web infrastructure evidenced in WDM's current authorized website state",
+    "persistent_data_recovery": "not applicable to observed static public website: no database/schema/storage changes are within this assignment or snapshot scope"
+  },
+  "baseline_verification": {
+    "live_git_branch_refs": true,
+    "git_commit_objects_and_exact_tree_sha_checked": true,
+    "matching_commit_tree_source": true,
+    "git_tree_contents_cname_and_styles_checked": true,
+    "pages_workflow_runs_checked": true,
+    "non_production_snapshot_branch_checked": true,
+    "previous_post_manifest_read_by_immutable_sha": true,
+    "restricted_claims_and_tech_source": "User reports bridge finished; WDM has not independently verified stage, product runtime, AI-specific implementation, end-to-end safety, or clearance for public copy.",
+    "qa_status": "Outstanding WDM Task 2.9 remains open; mobile/cross-browser/full accessibility/performance tests not certified by this PRE."
+  },
+  "decision_gate": "No website implementation by temp during startup. After a subsequent Keith work instruction, work only in authorized development/Working; published-site product/AI claims need source evidence and separate explicit Keith clearance. Public GitHub development source is visible externally. No main/Pages/DNS/domain/paid service/client outreach/algorithm/broker/system operation without exact authorization. A separate parent-controlled POST snapshot is required after accepted temp closeout.",
+  "secrets_recorded": false
+}

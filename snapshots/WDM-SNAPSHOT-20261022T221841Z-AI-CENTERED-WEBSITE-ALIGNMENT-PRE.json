@@ -1,0 +1,77 @@
+{
+  "snapshot_id": "WDM-SNAPSHOT-20261022T221841Z-AI-CENTERED-WEBSITE-ALIGNMENT-PRE",
+  "snapshot_type": "PRE-TEMP",
+  "captured_at_utc": "2026-10-22T22:18:41.532Z",
+  "purpose": "Opening architecture baseline for deferred AI-centered public website alignment temp. Future investor documents are withheld until owner confirms revisions complete; no investor source content or public claim approvals verified.",
+  "authority": "Web Development Manager parent, website architecture snapshot procedure",
+  "assignment": {
+    "parent_task_id": "2.12",
+    "child_task_ids": [
+      "2.12.1",
+      "2.12.2",
+      "2.12.3",
+      "2.12.4"
+    ],
+    "existing_task_timestamp_ct": "2026-10-22 17:17 CT",
+    "website_work_not_started": true,
+    "investor_content_access_before_activation": false,
+    "production_publication_approval": false
+  },
+  "repository": {
+    "id": 1379004080,
+    "full_name": "zornnovum-svg/zorn-novum-website",
+    "visibility": "public",
+    "default_branch": "main",
+    "main_commit_sha": "cfd4a90f04ae1eceac066b2b73176abfa2b422a4",
+    "main_git_tree_sha": "b99ec3ac5c89239778fa0dd6d70b98167fd5153f",
+    "development_commit_sha": "ca488a91fbb2266e9fbfdca1c5a667d523345a5d",
+    "development_git_tree_sha": "b99ec3ac5c89239778fa0dd6d70b98167fd5153f",
+    "branch_relationship": "distinct immutable commits, identical Git trees",
+    "snapshot_storage_branch": "wdm-snapshots",
+    "snapshot_storage_previous_commit_sha": "4d6b5acd2a94d3523510d4301dbb1aac6c8edace",
+    "CNAME": "zornnovum.com",
+    "CNAME_blob_sha": "4c16c577559f1aea707d2d1cfbc026083b461ccc",
+    "stylesheet_blob_sha": "9cbad2414b91359f6c5f78bfb0de94170d84b71a"
+  },
+  "hosting": {
+    "site_architecture": "Static HTML/CSS and images hosted using GitHub Pages; no website database or server-side processing evidenced",
+    "deployment_source": "main inferred from GitHub Pages workflow run",
+    "latest_successful_run_id": 38837588038,
+    "latest_successful_run_branch": "main",
+    "latest_successful_run_commit_sha": "cfd4a90f04ae1eceac066b2b73176abfa2b422a4",
+    "latest_successful_run_status": "completed",
+    "latest_successful_run_result": "success",
+    "observed_workflow_run_count_before_write": 10,
+    "observed_wdm_snapshots_branch_deploys": 0,
+    "public_domain_reference": "zornnovum.com",
+    "pages_settings_API": "not available through connected permitted endpoint",
+    "external_browser_render": "not independently tested by WDM for this snapshot",
+    "dns_tls_certification": "not independently tested by WDM for this snapshot"
+  },
+  "infrastructure": {
+    "github_repository_tree_is_technical_code_source": true,
+    "assets_domain_and_pages_workflow_pinned": true,
+    "railway_or_other_wdm_owned_web_services": "none evidenced in authorized website sources; not verified globally",
+    "database_schema_or_persistent_data_mutation_authorized": false,
+    "recovery": "exact immutable main and development commit SHAs plus Git trees; no database/schema to snapshot for static copy and CSS"
+  },
+  "verification": {
+    "main_development_and_storage_branch_heads_read": true,
+    "main_and_development_commit_tree_objects_verified": true,
+    "complete_observable_site_tree_read": true,
+    "custom_domain_cname_read": true,
+    "latest_pages_success_and_no_snapshot_branch_runs_verified": true,
+    "previous_post_reference": "WDM-SNAPSHOT-20261016T023547Z-EXECUTION-BRIDGE-AI-WEBSITE-POST",
+    "previous_post_immutable_commit": "4d6b5acd2a94d3523510d4301dbb1aac6c8edace",
+    "current_website_AI_role_expansion_facts": "NOT assessed or approved; pending investor updates and owner's explicit instruction",
+    "private_investor_documents_opened": false
+  },
+  "boundaries": {
+    "snapshots_are_parent_only": true,
+    "scope": "public website only; not product app, broker/exchange, investors' confidential material or company internal operations",
+    "public_claims_and_live_publication_require_owner_separate_approval": true,
+    "no_production_write_during_capture": true,
+    "no_secret_values_in_manifest": true
+  },
+  "secrets_recorded": false
+}

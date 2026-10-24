@@ -1,0 +1,89 @@
+{
+  "snapshot_id": "WDM-SNAPSHOT-20261024T045029Z-AI-CENTERED-WEBSITE-CANCELLED-POST",
+  "snapshot_type": "POST-TEMP",
+  "captured_at_utc": "2026-10-24T04:50:29.689Z",
+  "context": "Parent WDM technical POST for Keith-directed administrative cancellation/retirement of never-activated Expanded AI Website Alignment temporary assignment. No selected implementation work, public-facing content release, live website modification, investor-document source review or production deployment was performed for this temp. A separate new temp, if any, needs a fresh explicit assignment.",
+  "parent_disposition": {
+    "authorized_by": "Keith",
+    "instruction_received_utc": "2026-10-24T04:48:24Z",
+    "local_date_ct": "2026-10-23",
+    "status": "CANCELLED BEFORE ACTIVATION — NOT DELIVERED",
+    "parent_cancellation_acceptance": "Recorded in WDM Website Setup & Development Working Notes under PARENT WDM CANCELLATION DECISION — 2026-10-23 CT",
+    "temp_startup_document_id": "1cWvwQhJwp3YqlPqe0w3Bhm7_4sfmbghwdHAf-d0tpBk",
+    "temp_closeout": "not available/not required from never-started temp; parent directly accepted owner-directed cancellation",
+    "tasks": {
+      "list": "1U7GBXQ4TQtwbZ66YF423fsER7adOVr_epYUbw1Xcuxk",
+      "master": "2.12",
+      "children": [
+        "2.12.1",
+        "2.12.2",
+        "2.12.3",
+        "2.12.4"
+      ],
+      "original_entry_timestamp_ct": "2026-10-22 17:17 CT"
+    },
+    "investor_docs_read_for_assignment": false,
+    "investor_docs_mutated": false,
+    "underlying_website_work_delivered": false
+  },
+  "relationship": {
+    "linked_pre_snapshot_id": "WDM-SNAPSHOT-20261022T221841Z-AI-CENTERED-WEBSITE-ALIGNMENT-PRE",
+    "linked_pre_manifest_immutable_commit": "1ffd17c2dcdf234894b82443a8455da25cd58442",
+    "linked_pre_manifest_path": "snapshots/WDM-SNAPSHOT-20261022T221841Z-AI-CENTERED-WEBSITE-ALIGNMENT-PRE.json",
+    "previous_accepted_october15_post_id": "WDM-SNAPSHOT-20261016T023547Z-EXECUTION-BRIDGE-AI-WEBSITE-POST",
+    "previous_accepted_october15_post_manifest_commit": "4d6b5acd2a94d3523510d4301dbb1aac6c8edace"
+  },
+  "repository": {
+    "id": 1379004080,
+    "full_name": "zornnovum-svg/zorn-novum-website",
+    "visibility": "public",
+    "default_branch": "main",
+    "main_commit_sha": "cfd4a90f04ae1eceac066b2b73176abfa2b422a4",
+    "main_git_tree_sha": "b99ec3ac5c89239778fa0dd6d70b98167fd5153f",
+    "development_commit_sha": "ca488a91fbb2266e9fbfdca1c5a667d523345a5d",
+    "development_git_tree_sha": "b99ec3ac5c89239778fa0dd6d70b98167fd5153f",
+    "same_site_tree": true,
+    "snapshot_storage_branch": "wdm-snapshots",
+    "snapshot_storage_previous_sha": "1ffd17c2dcdf234894b82443a8455da25cd58442",
+    "CNAME": "zornnovum.com",
+    "CNAME_blob_sha": "4c16c577559f1aea707d2d1cfbc026083b461ccc",
+    "stylesheet_blob_sha": "9cbad2414b91359f6c5f78bfb0de94170d84b71a"
+  },
+  "hosting": {
+    "type": "static GitHub Pages",
+    "deployment_source": "main (verified from run data)",
+    "latest_successful_workflow_run": 38837588038,
+    "latest_successful_workflow_commit_sha": "cfd4a90f04ae1eceac066b2b73176abfa2b422a4",
+    "observed_pages_run_count": 10,
+    "observed_wdm_snapshots_deployments": 0,
+    "live_domain": "zornnovum.com",
+    "pages_settings_api": "not reachable using authorized connector",
+    "dns_tls_external_verification": "not independently run for this administrative cancellation",
+    "browser_mobile_lighthouse_audit": "not independently performed"
+  },
+  "persistent_data": {
+    "website_scope": "Static source/docs/assets only; no WDM-owned DB or data/schema system evidenced",
+    "schema_mutation_allowed": false,
+    "material_data_mutation_allowed": false,
+    "backup_required_for_this_retirement": false,
+    "recovery": "Immutable main and development code commit SHA and tree SHA; earlier PRE and accepted POST preserved."
+  },
+  "verification": {
+    "main_and_development_branch_heads_same_as_pre": true,
+    "actual_git_commit_and_tree_objects_verified": true,
+    "site_tree_complete_untruncated": true,
+    "pr_history_unchanged_last_merge_pr3": "2026-10-16T01:53:57Z",
+    "cname_file_read": true,
+    "latest_pages_run_success": true,
+    "source_branch_snapshots_has_never_triggered_observed_pages_runs": true,
+    "investor_material_access": "none during this parent closeout",
+    "limitations": "No independent full app/runtime, broad QA, DNS/TLS, secret-bearing configuration, or unobserved external environment verification."
+  },
+  "record_retention": {
+    "policy": "Existing immutable snapshot and append-only company change-log must not be deleted/rewritten. Closing a never-activated role is recorded as cancellation, not successful website delivery.",
+    "temp_startup_to_archive_after_post_and_task_disposition": true,
+    "task_completion_time": "blank because work was cancelled, not completed",
+    "no_new_role_or_automation_authorized": true
+  },
+  "contains_secrets": false
+}

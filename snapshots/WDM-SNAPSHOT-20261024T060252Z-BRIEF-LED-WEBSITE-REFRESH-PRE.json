@@ -1,0 +1,86 @@
+{
+  "snapshot_id": "WDM-SNAPSHOT-20261024T060252Z-BRIEF-LED-WEBSITE-REFRESH-PRE",
+  "snapshot_type": "PRE-TEMP",
+  "captured_at_utc": "2026-10-24T06:02:52.538Z",
+  "purpose": "Parent WDM opening technical baseline for new public website content/structure refresh by separate temporary specialist. This is technical reference capture only, not authority to make claims or deploy.",
+  "work": {
+    "parent_role": "Web Development Manager",
+    "parent_task": "2.13",
+    "child_tasks": [
+      "2.13.1",
+      "2.13.2",
+      "2.13.3",
+      "2.13.4",
+      "2.13.5",
+      "2.13.6"
+    ],
+    "original_timestamp_ct": "2026-10-24 01:02 CT",
+    "implementation_started": false,
+    "public_naming_clearance": "unverified; no public trademark assertion permitted solely because name proposed with TM symbol",
+    "production_publication_approved": false
+  },
+  "repository": {
+    "full_name": "zornnovum-svg/zorn-novum-website",
+    "repo_id": 1379004080,
+    "visibility": "public",
+    "default_branch": "main",
+    "production_branch": "main",
+    "main_commit_sha": "cfd4a90f04ae1eceac066b2b73176abfa2b422a4",
+    "main_git_tree_sha": "b99ec3ac5c89239778fa0dd6d70b98167fd5153f",
+    "development_branch": "development",
+    "development_commit_sha": "ca488a91fbb2266e9fbfdca1c5a667d523345a5d",
+    "development_git_tree_sha": "b99ec3ac5c89239778fa0dd6d70b98167fd5153f",
+    "same_git_tree_currently": true,
+    "snapshot_storage_branch": "wdm-snapshots",
+    "snapshot_storage_prior_sha": "79dc8c0140fb1cba303526b8a210c9aa42fb3316",
+    "snapshot_storage_verified_no_observed_deployments": true,
+    "site_tree_entries": 40,
+    "site_tree_recursive_truncated": false
+  },
+  "hosting": {
+    "provider": "GitHub Pages",
+    "source_branch_evidence": "Observed successful Pages workflow runs from main, none from nonproduction wdm-snapshots",
+    "latest_pages_run_id": 38837588038,
+    "latest_pages_run_sha": "cfd4a90f04ae1eceac066b2b73176abfa2b422a4",
+    "latest_pages_run_utc": "2026-10-16T01:53:59Z",
+    "latest_pages_conclusion": "success",
+    "observed_total_run_count": 10,
+    "observed_snapshot_branch_deployment_count": 0,
+    "custom_domain_cname": "zornnovum.com",
+    "CNAME_blob_sha": "4c16c577559f1aea707d2d1cfbc026083b461ccc",
+    "CSS_blob_sha": "9cbad2414b91359f6c5f78bfb0de94170d84b71a",
+    "pages_settings_api": "not independently available via permitted public endpoint",
+    "external_dns_tls": "not independently verified",
+    "external_browser_render": "not independently tested in parent snapshot"
+  },
+  "implementation": {
+    "observed_site": "Static HTML and CSS, public image assets hosted using GitHub Pages",
+    "code_recovery": "Exact immutable GitHub commit/tree references for main and development. Do not mutate protected state from a snapshot creation.",
+    "persistent_database": "None evidenced as part of WDM public static site",
+    "database_schema_mutation_allowed": false,
+    "material_persistent_data_mutation_allowed": false,
+    "backup_or_recovery_point": "Code commit/tree pins; no WDM site database backup indicated for static copy/style scope",
+    "unobserved_external_services": "Outside permitted snapshot scope; no global absence claimed"
+  },
+  "verification": {
+    "repo_and_branch_heads_read": true,
+    "actual_commit_tree_objects_verified": true,
+    "tree_full_count": 40,
+    "site_CNAME_blob_read": true,
+    "latest_Pages_run_verified": true,
+    "no_workflow_runs_from_snapshot_branch": true,
+    "prior_retirement_POST_id": "WDM-SNAPSHOT-20261024T045029Z-AI-CENTERED-WEBSITE-CANCELLED-POST",
+    "prior_retirement_POST_immutable_commit": "79dc8c0140fb1cba303526b8a210c9aa42fb3316",
+    "site_unchanged_from_immediately_prior_snapshot": true,
+    "private_website_update_brief_contents_not_read_by_parent": true
+  },
+  "restrictions": {
+    "snapshot_owner": "parent WDM only",
+    "public_pages_read": "allowed via scoped website implementation role after selected work",
+    "public_claims": "owner/appropriate fact approval before publication",
+    "public_product_names": "must satisfy current legal/trademark clearance gate as well as owner authorization; TM does not equal registration",
+    "external_law_clinic_statement": "requires owner-confirmed accurate wording and non-endorsement framing before public display",
+    "approval": "Keith separate production approval required after QA",
+    "secrets_recorded": false
+  }
+}

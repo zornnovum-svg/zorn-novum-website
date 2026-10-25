@@ -17,13 +17,28 @@
   const close = document.getElementById('concept-close');
   let active = null;
   let opener = null;
+  const expand = document.getElementById('concept-expand');
+  let expanded = false;
   function filter() {
+    const filtered = type.value !== 'all' || direction.value !== 'all';
+    const matching = cards.filter(card => (type.value === 'all' || card.dataset.type === type.value) && (direction.value === 'all' || card.dataset.direction === direction.value));
+    const showAll = filtered || expanded || !expand;
     cards.forEach(card => {
-      card.hidden = (type.value !== 'all' && card.dataset.type !== type.value) || (direction.value !== 'all' && card.dataset.direction !== direction.value);
+      card.hidden = !matching.includes(card) || (!showAll && card.dataset.featured !== 'true');
     });
     const n = cards.filter(card => !card.hidden).length;
-    count.textContent = `${n} of ${cards.length} concepts shown`;
+    count.textContent = filtered ? `${n} of ${cards.length} concepts match` : `${n} of ${cards.length} concepts shown`;
+    if (expand) {
+      expand.hidden = filtered;
+      expand.setAttribute('aria-expanded', String(expanded));
+      expand.textContent = expanded ? 'Show selected concepts' : `View all ${cards.length} concepts`;
+    }
   }
+  if (expand) expand.addEventListener('click', () => {
+    expanded = !expanded;
+    filter();
+    if (!expanded) expand.scrollIntoView({block:'nearest', behavior:'auto'});
+  });
   type.addEventListener('change', filter);
   direction.addEventListener('change', filter);
   document.getElementById('concept-controls').hidden = false;

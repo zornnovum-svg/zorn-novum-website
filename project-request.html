@@ -74,6 +74,20 @@
           <label><input type="checkbox" name="platforms[]" value="Web browser"> Web browser</label>
           <label><input type="checkbox" name="platforms[]" value="Not sure yet"> Not sure yet</label>
         </div></fieldset>
+        <div class="zn-form-field" id="request-digital-delivery-options"><label for="request-digital-delivery">Preferred digital delivery, if known</label>
+          <select id="request-digital-delivery" name="digital_delivery_preference" aria-describedby="request-digital-delivery-help">
+            <option value="">Discuss the best option</option>
+            <option>Private download of agreed files</option>
+            <option>Hosted website or browser-based application</option>
+            <option>Deployment or file handover to my own account</option>
+            <option>Android or iPad app distribution</option>
+          </select>
+          <p class="zn-field-help" id="request-digital-delivery-help">We assess the appropriate route, access requirements and costs for your project. You may also request the encrypted USB option below. Please do not provide account passwords or credentials. <a href="/services.html#services-digital-delivery-heading">Compare digital delivery options</a>.</p>
+        </div>
+        <fieldset class="zn-platform-options" id="request-delivery-options"><legend>Optional physical delivery</legend>
+          <div class="zn-check-grid"><label><input type="checkbox" name="delivery_preference" value="Request a quote for encrypted USB delivery by insured USPS mail" aria-describedby="request-delivery-help"> I would like an encrypted USB delivery quote.</label></div>
+          <p class="zn-field-help" id="request-delivery-help">Starts at $275 for suitable projects, separately from development. Includes a 32GB hardware-encrypted USB drive, preparation, tracked and insured U.S. mail, and signature confirmation. This is an inquiry, not an order. <a href="/services.html#services-delivery-heading">Delivery details</a>.</p>
+        </fieldset>
         <div class="zn-form-grid">
           <div class="zn-form-field"><label for="request-budget">Budget range, if known</label><input id="request-budget" name="budget" maxlength="160"></div>
           <div class="zn-form-field"><label for="request-timing">Desired timing, if known</label><input id="request-timing" name="timing" maxlength="160"></div>

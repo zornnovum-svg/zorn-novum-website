@@ -12,6 +12,78 @@
 
 (() => {
   const form = document.getElementById('project-request-form');
+  const summary = document.getElementById('request-validation-summary');
+  if (!form || !summary) return;
+  const fields = [
+    { id: 'request-name', label: 'Your name', missing: 'Please enter your name.' },
+    { id: 'request-email', label: 'Email address', missing: 'Please enter your email address.' },
+    { id: 'request-goal', label: 'Project description', missing: 'Please describe what you would like to improve or create.' }
+  ].map(item => ({ ...item, input: document.getElementById(item.id), error: document.getElementById(item.id + '-error') }));
+  if (fields.some(item => !item.input || !item.error)) return;
+  let attempted = false;
+
+  function messageFor(item) {
+    if (!item.input.value.trim()) return item.missing;
+    if (item.input.validity.typeMismatch) return 'Enter an email address in the format name@example.com.';
+    if (item.input.validity.tooLong) return 'Please shorten your answer to the allowed length.';
+    return item.input.validity.valid ? '' : 'Please check this field.';
+  }
+
+  function validateField(item) {
+    const message = messageFor(item);
+    item.error.textContent = message;
+    item.error.hidden = !message;
+    if (message) item.input.setAttribute('aria-invalid', 'true');
+    else item.input.removeAttribute('aria-invalid');
+    return !message;
+  }
+
+  function updateSummary() {
+    const invalid = fields.filter(item => messageFor(item));
+    summary.hidden = !attempted || invalid.length === 0;
+    summary.textContent = summary.hidden ? '' : 'Please check: ' + invalid.map(item => item.label).join(', ') + '.';
+    return invalid;
+  }
+
+  for (const item of fields) {
+    item.input.addEventListener('blur', () => {
+      validateField(item);
+      updateSummary();
+    });
+    item.input.addEventListener('input', () => {
+      if (attempted || !item.error.hidden) validateField(item);
+      updateSummary();
+    });
+  }
+
+  form.addEventListener('submit', (event) => {
+    attempted = true;
+    fields.forEach(validateField);
+    const invalid = updateSummary();
+    if (!invalid.length) return;
+    event.preventDefault();
+    event.stopImmediatePropagation();
+    invalid[0].input.focus();
+  });
+
+  form.addEventListener('reset', () => {
+    attempted = false;
+    summary.hidden = true;
+    summary.textContent = '';
+    fields.forEach(item => {
+      item.error.hidden = true;
+      item.error.textContent = '';
+      item.input.removeAttribute('aria-invalid');
+    });
+  });
+
+  // Use inline errors only once validation is installed; HTML validation remains
+  // available if JavaScript cannot load.
+  form.noValidate = true;
+})();
+
+(() => {
+  const form = document.getElementById('project-request-form');
   const status = document.getElementById('request-submit-status');
   if (!form || !status || form.dataset.deliveryStatus !== 'connected' ||
       !window.fetch || !window.FormData || !window.AbortController) return;

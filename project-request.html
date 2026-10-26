@@ -23,9 +23,10 @@
   <meta name="theme-color" content="#070c11">
   <link rel="icon" type="image/png" href="/assets/Zorn_Novum_Web_Favicon_512.png">
   <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/assets/project-request-validation.css">
   
   
-  <script src="/assets/project-request.js?v=confirmation-20261025" defer></script>
+  <script src="/assets/project-request.js?v=validation-20261025" defer></script>
 </head>
 <body id="zn-site">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -50,8 +51,8 @@
       <fieldset class="zn-form-fields">
         <legend class="zn-visually-hidden">Project request details</legend>
         <div class="zn-form-grid">
-          <div class="zn-form-field"><label for="request-name">Your name <span>(required)</span></label><input id="request-name" name="name" autocomplete="name" required maxlength="120"></div>
-          <div class="zn-form-field"><label for="request-email">Email address <span>(required)</span></label><input id="request-email" type="email" name="email" autocomplete="email" required maxlength="254"></div>
+          <div class="zn-form-field"><label for="request-name">Your name <span>(required)</span></label><input id="request-name" name="name" autocomplete="name" required maxlength="120" aria-describedby="request-name-error"><p class="zn-field-error" id="request-name-error" aria-live="polite" hidden></p></div>
+          <div class="zn-form-field"><label for="request-email">Email address <span>(required)</span></label><input id="request-email" type="email" name="email" autocomplete="email" required maxlength="254" aria-describedby="request-email-error"><p class="zn-field-error" id="request-email-error" aria-live="polite" hidden></p></div>
           <div class="zn-form-field"><label for="request-business">Business name</label><input id="request-business" name="business" autocomplete="organization" maxlength="160"></div>
           <div class="zn-form-field"><label for="request-service">What do you need?</label><select id="request-service" name="service" aria-describedby="request-service-help">
             <option value="">Choose an option</option>
@@ -64,7 +65,7 @@
             <option>A combination</option>
             <option>Not sure yet</option>          </select><p class="zn-field-help" id="request-service-help">Software includes calculators, quoting, tracking, inventory and reports. Automation and integrations include API, MCP and OAuth connections.</p><p class="zn-field-help" id="request-service-context" hidden>Selected from the service page; you can change this choice.</p></div>
         </div>
-        <div class="zn-form-field"><label for="request-goal">What would you like to improve or create? <span>(required)</span></label><textarea id="request-goal" name="project_description" rows="4" required maxlength="5000" aria-describedby="request-goal-help"></textarea><p class="zn-field-help" id="request-goal-help">Describe the need and the outcome you have in mind.</p></div>
+        <div class="zn-form-field"><label for="request-goal">What would you like to improve or create? <span>(required)</span></label><textarea id="request-goal" name="project_description" rows="4" required maxlength="5000" aria-describedby="request-goal-help request-goal-error"></textarea><p class="zn-field-error" id="request-goal-error" aria-live="polite" hidden></p><p class="zn-field-help" id="request-goal-help">Describe the need and the outcome you have in mind.</p></div>
         <div class="zn-form-field"><label for="request-workflow">How do you handle it today?</label><textarea id="request-workflow" name="current_process" rows="3" maxlength="2500"></textarea></div>
         <div class="zn-form-field"><label for="request-users">Who would use it?</label><input id="request-users" name="intended_users" maxlength="500" aria-describedby="request-users-help"><p class="zn-field-help" id="request-users-help">For example, your staff, customers or a particular team. Please do not include private customer records.</p></div>
         <fieldset class="zn-platform-options"><legend>Where would the software be used?</legend><p class="zn-field-help" id="request-platform-help">Select any that apply. You can skip this for a graphics-only request. Device support is agreed per project.</p><div class="zn-check-grid">
@@ -95,6 +96,7 @@
         <input type="hidden" name="subject" value="Zorn Novum — Business project request">
         <input type="text" name="_gotcha" class="zn-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
         <p class="zn-mini" id="request-data-note">Your contact details and project description are processed and stored by Formspree and sent to Zorn Novum so we can respond. Please do not include passwords, credentials, sensitive files or private customer records. <a href="https://formspree.io/legal/privacy-policy">Formspree privacy policy</a>.</p>
+        <p class="zn-validation-summary" id="request-validation-summary" role="alert" hidden></p>
         <p class="zn-form-notice" id="request-submit-status" role="status" aria-live="polite" tabindex="-1" hidden></p>
         <button class="zn-button zn-primary" type="submit">Send project request</button>
         <p class="zn-mini zn-email-help">If you cannot submit, email <a href="mailto:orders@zornnovum.com">orders@zornnovum.com</a>.</p>

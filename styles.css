@@ -155,7 +155,7 @@ body{margin:0}
 #zn-site .zn-node-c{bottom:10%}
 #zn-site .zn-node-d{bottom:8%}
 
-@media(max-width:760px){
+@media(max-width:960px){
   #zn-site .zn-header{align-items:center;flex-direction:row;flex-wrap:wrap;gap:12px;padding-right:clamp(22px,5vw,52px)}
 
   #zn-site .zn-nav{display:none}

@@ -315,7 +315,7 @@ body{margin:0}
 #zn-site .zn-footer-logo .zn-mark{width:46px;height:48px;font-size:25px;flex:none}
 #zn-site .zn-footer-v2 .zn-footer-description{font-size:15px;line-height:1.75;margin:26px 0 28px;max-width:42ch}
 #zn-site .zn-footer-social-label{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;margin-bottom:15px!important;color:#d7e6f0}
-#zn-site .zn-social-list{display:flex;gap:12px 16px;flex-wrap:wrap;list-style:none;margin:0;padding:0}
+#zn-site .zn-social-list{display:grid;grid-template-columns:repeat(3,max-content);gap:18px 16px;list-style:none;margin:0;padding:0}
 #zn-site .zn-social-item{display:flex;flex-direction:column;align-items:center;gap:8px;min-width:54px;font-size:12px;line-height:1.4;color:#d7e6f0;text-decoration:none}
 #zn-site .zn-social-circle{display:grid;place-items:center;width:46px;height:46px;border-radius:50%;border:1px solid #668193;background:#dcebf5;color:#07131e;transition:background-color .15s,border-color .15s}
 #zn-site .zn-social-circle svg{display:block;width:22px;height:22px;fill:currentColor}
@@ -362,3 +362,6 @@ body{margin:0}
 }
 @media(max-width:360px){#zn-site .zn-footer-groups,#zn-site .zn-footer-group:last-child ul{grid-template-columns:minmax(0,1fr)}#zn-site .zn-footer-group:last-child{grid-column:auto}}
 @media(prefers-reduced-motion:reduce){#zn-site .zn-social-circle{transition:none}}
+
+/* Six social channels fit one row in the stacked tablet footer. */
+@media(min-width:601px) and (max-width:1050px){#zn-site .zn-social-list{grid-template-columns:repeat(6,max-content)}}

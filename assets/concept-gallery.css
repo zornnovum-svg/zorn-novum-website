@@ -25,8 +25,8 @@
 #zn-site .zn-concept-dialog::backdrop{background:rgb(0 0 0 / .86)}
 #zn-site .zn-concept-dialog:not([open]){display:none}
 #zn-site .zn-viewer-head{position:sticky;top:0;z-index:1;background:#0b131c;border-bottom:1px solid #304353;padding:16px 20px;display:flex;align-items:center;justify-content:space-between;gap:16px}
-#zn-site .zn-viewer-head h2{font-size:clamp(19px,2.4vw,27px);line-height:1.2;margin:0;overflow-wrap:break-word}
-#zn-site .zn-viewer-close{flex:none;min-height:44px;min-width:72px;cursor:pointer}
+#zn-site .zn-viewer-head h2{font-size:clamp(19px,2.4vw,27px);line-height:1.2;margin:0;overflow-wrap:break-word;min-width:0;flex:1 1 auto}
+#zn-site .zn-viewer-close{flex:none;min-height:44px;min-width:72px;cursor:pointer;width:auto}
 #zn-site .zn-viewer-tools{display:flex;flex-wrap:wrap;gap:10px 20px;align-items:center;padding:14px 20px}
 #zn-site .zn-viewer-tools .zn-button{font-size:13px;cursor:pointer}
 #zn-site .zn-viewer-tools a{display:inline-flex;align-items:center;min-height:44px;font-size:13px}

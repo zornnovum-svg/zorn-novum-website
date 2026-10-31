@@ -33,3 +33,7 @@
   #zn-site .zn-article-body{font-size:17px;line-height:1.75}
   #zn-site .zn-article-body section{margin-top:30px}
 }
+
+/* Responsive illustration for News & Insights articles. */
+#zn-site .zn-article-figure{margin:34px 0 0}
+#zn-site .zn-article-figure img{display:block;width:100%;height:auto;border:1px solid var(--zn-line);border-radius:16px}

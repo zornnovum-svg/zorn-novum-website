@@ -297,3 +297,11 @@
 @media(max-width:760px){
   #zn-site:not(.zn-home) main>section.zn-section{padding:62px 24px}
 }
+
+
+/* Keep the project request form readable inside its dark panel on light sections. */
+#zn-site .zn-request-layout .zn-request-panel .zn-form-heading{color:#F0F5F8}
+#zn-site .zn-request-layout .zn-request-panel :is(.zn-mini,.zn-field-help){color:#B8CAD6}
+#zn-site .zn-request-layout .zn-request-panel .zn-check-grid label{color:#F0F5F8}
+#zn-site .zn-request-layout .zn-request-panel .zn-check-grid input{accent-color:#75BFF2}
+#zn-site .zn-request-layout .zn-request-guide .zn-kicker{color:#077B94}

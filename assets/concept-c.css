@@ -9,7 +9,7 @@
 #zn-site :is(h1,h2,h3){letter-spacing:-.045em}
 #zn-site .zn-shell{max-width:1240px}
 #zn-site .zn-header{
-  max-width:none;width:100%;min-height:76px;position:relative;z-index:30;
+  max-width:none;width:100%;min-height:76px;position:sticky;top:0;z-index:30;
   display:flex;align-items:center;justify-content:space-between;flex-wrap:nowrap;gap:26px;
   padding:13px max(24px,calc((100vw - 1240px)/2 + 46px));
   background:#F8FAFC;border-bottom:1px solid #DBE4EC;color:#172534;

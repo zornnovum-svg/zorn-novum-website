@@ -305,3 +305,10 @@
 #zn-site .zn-request-layout .zn-request-panel .zn-check-grid label{color:#F0F5F8}
 #zn-site .zn-request-layout .zn-request-panel .zn-check-grid input{accent-color:#75BFF2}
 #zn-site .zn-request-layout .zn-request-guide .zn-kicker{color:#077B94}
+
+
+/* Form panel controls must retain high contrast inside the dark panel. */
+#zn-site:not(.zn-home) main>section.zn-request-layout.zn-section:nth-of-type(even) .zn-request-panel .zn-form-heading{color:#F0F5F8}
+#zn-site:not(.zn-home) main>section.zn-request-layout.zn-section:nth-of-type(even) .zn-request-panel :is(.zn-mini,.zn-field-help){color:#B8CAD6}
+#zn-site:not(.zn-home) main>section.zn-request-layout.zn-section:nth-of-type(even) .zn-request-panel .zn-check-grid label{color:#F0F5F8}
+#zn-site:not(.zn-home) main>section.zn-request-layout.zn-section:nth-of-type(even) .zn-request-panel .zn-check-grid input{accent-color:#75BFF2}
